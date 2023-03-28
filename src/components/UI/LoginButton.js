@@ -1,7 +1,11 @@
 import "./LoginButton.css";
 
-const LoginButton = () => {
-  return <button className="spotify-button">Connect with Spotify</button>;
+const LoginButton = (props) => {
+  return (
+    <button className="spotify-button" onClick={props.onSpotifyAuthenticate}>
+      Connect with Spotify
+    </button>
+  );
 };
 
 export default LoginButton;
