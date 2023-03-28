@@ -2,6 +2,7 @@ import "./Login.css";
 import LoginButton from "../UI/LoginButton";
 
 const Login = () => {
+  const spotifyAuthenticateHandler = () => {};
   return (
     <div className="login">
       <header className="login-header">
@@ -10,7 +11,10 @@ const Login = () => {
           <a>Last Stop For Music</a>
         </div>
       </header>
-      <LoginButton className="login-button" />
+      <LoginButton
+        className="login-button"
+        onSpotifyAuthenticate={spotifyAuthenticateHandler}
+      />
     </div>
   );
 };
