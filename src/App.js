@@ -1,12 +1,10 @@
-import "./App.css";
-
+import { Fragment } from "react";
+import Login from "./components/Auth/Login.js";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a>Learn React</a>
-      </header>
-    </div>
+    <Fragment>
+      <Login />
+    </Fragment>
   );
 }
 

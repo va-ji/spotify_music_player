@@ -1,0 +1,17 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.login-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.login a {
+  color: white;
+}
