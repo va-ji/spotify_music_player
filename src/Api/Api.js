@@ -34,6 +34,26 @@ class API {
       console.error(error);
     }
   }
+
+  async getAuthToken(code = "") {
+    if (code === "") {
+      return;
+    }
+
+    const path = `/authorise/token/${code}`;
+    const url = this.base_url + path;
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      return response.json();
+    } catch (error) {
+      console.error(error);
+    }
+  }
 }
 
 export default API;
